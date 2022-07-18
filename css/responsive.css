@@ -30,8 +30,9 @@
         width: 100%;
     }
     .image{
-        width: 65%;
-        height: auto;
+        width: 100%;
+       max-width: 250px;
+       height: auto;
     }
     
 }
