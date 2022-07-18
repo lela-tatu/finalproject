@@ -135,7 +135,8 @@ li a:hover {
     width: 80%;
     margin-top: 25px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     
 }
 .textarea-block{
@@ -216,11 +217,13 @@ p{
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin-top: 25px;
+    margin-bottom: 10%;
 
 }
 .Service-child{
     background-color: antiquewhite;
-    width: 400px;
+    width: 900px;
+    height:auto ;
     margin: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -258,6 +261,7 @@ p{
 margin-left: auto;   
 margin-right: auto;
 margin-top: 20px;
+margin-bottom: 30px;
 }
 
 .wrapper-about-us {
@@ -268,6 +272,7 @@ display: flex;
     justify-content: space-around;
 width: 80%;
 padding-top: 20px;
+margin-bottom: 30px;
 
 background-color: rgb(87, 90, 90);
 }
@@ -306,6 +311,7 @@ background-color: rgb(87, 90, 90);
     margin-left: auto;   
     margin-right: auto;
     background-color: #3a3737;
+    
 }
 
 
@@ -348,12 +354,21 @@ background-color: rgb(87, 90, 90);
 
 /* button-style */
 .read{
-  margin: 20px;
+  
   color: #fdfcfc;
   text-align: center;
   background-color: #f3970c;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+
+}
+.read:hover{
+    border: #615c5c 2px solid;
+    background-color: #f3970c;
+    color: #faf8f5;
 
 }
 
@@ -391,6 +406,7 @@ background-color: rgb(87, 90, 90);
 
     background-size: cover;
     margin-top: 30px;
+    
     }
 
   .child-box{
@@ -410,7 +426,16 @@ background-color: rgb(87, 90, 90);
     margin: 20px;
     text-align: center;
   }
-  
+  .Service-wrapper,
+  .header, 
+  .footer,
+  .wrapper-about-us, 
+  .menu-wrapper,
+  .menu-wrapper2, 
+  .contact-wrapper{
+      -webkit-box-shadow: 0 0 40px rgba(0,0,0,0.5);
+              box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  }
 
 
 
