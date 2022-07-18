@@ -29,5 +29,9 @@
     .input-box{
         width: 100%;
     }
+    .image{
+        width: 65%;
+        height: auto;
+    }
     
 }
