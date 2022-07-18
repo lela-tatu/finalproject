@@ -1,0 +1,33 @@
+/* responsive code */
+@media (max-width:768px) {
+    .toggle-menu {
+        display: block;
+    }
+    .ul,
+    .logo,
+    .image1{
+        display: none;
+    }
+    .Service-wrapper,
+    .info,
+    .footer,
+    .wrapper-about-us,
+    .contact-wrapper
+    {      
+        height: 100%;
+        flex-wrap: wrap;
+        margin:50px;
+        margin: auto;   
+    }
+    .contact,
+    .box-child,
+    .menu-child{
+        margin:50px;
+        margin: auto;  
+    }
+    .textarea-block,
+    .input-box{
+        width: 100%;
+    }
+    
+}
