@@ -395,7 +395,14 @@ background-color: rgb(87, 90, 90);
     font-size: 35px;
   }
   
-  
+  .map1{
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 80%;
+    
+  }
   .footer{
     display: -webkit-box;
     display: -ms-flexbox;

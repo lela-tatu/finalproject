@@ -34,10 +34,11 @@
        max-width: 250px;
        height: auto;
     }
+    .map,
     .image1,
     .image3{
         width: 100%;
-        max-width: 100px;
+        max-width: 150px;
         height: auto;
     }
     
