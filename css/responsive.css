@@ -3,7 +3,7 @@
     .toggle-menu {
         display: block;
     }
-    .nav-bar
+    .ul,
     .logo
     {
         display: none;
@@ -39,7 +39,11 @@
     .image3{
         width: 100%;
         max-width: 150px;
-        height: auto;
+        max-height:150px ;
+        height: 100%;
+    }
+    .h5{
+        display: block;
     }
     
     
