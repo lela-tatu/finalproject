@@ -4,8 +4,8 @@
         display: block;
     }
     .ul,
-    .logo,
-    .image1{
+    .logo
+    {
         display: none;
     }
     .Service-wrapper,
@@ -34,5 +34,12 @@
        max-width: 250px;
        height: auto;
     }
+    .image1,
+    .image3{
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+    
     
 }
