@@ -8,12 +8,16 @@
 
 
 :root {
-
-    --primary-color: #f3970c;
+    
+    --primary-color: #FEA116;;
+    --black: black;
+    --color-gris: #f1ede9;
+    --gris: rgb(87, 90, 90);
+    --font: ;
 
   }
 body{
-    background-color: dimgrey;
+    background-color: rgb(32, 32, 32);
 }
 /*header*/
 
@@ -24,7 +28,8 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+   
+    
     
 }
 .logo{
@@ -54,22 +59,25 @@ header{
     
 }
 
-li a:hover {  
-    border-bottom: 5px solid #f1eaea;
+li a:hover { 
+    color: var(--color-gris); 
+    border-bottom: 5px solid;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 20px;        
   }
 
 .ul li a {
-    color: white;
-    text-shadow: 5px 5px 10px black;
-    font-size: 20px;
+    color: var(--color-gris);
+    text-shadow: 5px 5px 10px var(--black);
+    font-size: 22px;
+
     
 }
 .nav li{
     padding: 10px;
     margin-right: 25px;
+    cursor: pointer;
   
 }
 .nav-2{
@@ -97,7 +105,7 @@ li a:hover {
 .line {
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color:var(--color-gris);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,7 +144,7 @@ li a:hover {
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px var(--black);
     
 }
 .textarea-block{
@@ -151,13 +159,19 @@ li a:hover {
   }
 .contact-wrapper:only-child{
   
-    background-color: rgb(87, 90, 90);
+    background-color:var(--gris);
 }
 
 
 /* fonts-text-style */
     
-
+h1{
+   color: var(--primary-color);
+   font-size: 20pt;
+   font-family: 'pacifico',cursive;
+   padding-top: 20rem;
+   padding-left: 2rem;
+}
 h2{
    
     font-size: x-large;
@@ -167,13 +181,23 @@ h2{
     margin: 20px;
     
     }
+ h2::before{
+    content:;
+ }
 
 h3{
     text-align: center;
-    color: #e0dcd8;
+    color: var(--color-gris);
     margin: 10px;
     font-family: 'Lobster';
    font-size: xx-large;
+}
+h6{
+    color: var(--color-gris);
+   font-size: 40pt;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   padding-top: 1rem;
+   padding-left: 2rem;
 }
 p{  
     font-family: 'Lobster';
@@ -181,7 +205,8 @@ p{
     text-align: center;
     margin: 20px;
     color: #696363; 
-    font-size: large;
+    
+    
    
 }
 
@@ -223,14 +248,14 @@ p{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 
 }
 
 .Service-child:hover{
     background-color: #f7b148;
     border-radius: 10px;
+    color:var(--color-gris);
     -webkit-text-decoration-style: var(--primary-color);
             text-decoration-style: var(--primary-color);
 
@@ -268,8 +293,7 @@ display: flex;
 width: 80%;
 padding-top: 20px;
 margin-bottom: 30px;
-
-background-color: rgb(87, 90, 90);
+background-color:var(--gris);
 }
 
 .box-child1{
@@ -280,13 +304,12 @@ background-color: rgb(87, 90, 90);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
     text-align: center;
 
 }
 .box-child1:hover{
-    color: #f5f3f3;
+    color: var(--color-gris);
     background-color: #f7b148;
     border-radius: 10px; 
 }
@@ -359,7 +382,7 @@ background-color: rgb(87, 90, 90);
   padding: 10px;
   border-radius: 50px;
   margin: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px var(--black);
 
 
 }
@@ -374,25 +397,14 @@ background-color: rgb(87, 90, 90);
 }
 
 /* footer */
-  .fa-facebook{
-      color: rgb(139, 139, 219);
+  .fa-facebook,
+  .fa-twitter,
+  .fa-google-plus,
+  .fa-whatsapp
+  {
+      color: rgb(241, 158, 48);
       font-size: 35px;}
-      
-  
-  .fa-twitter{
-     color: rgb(13, 152, 199);
-     font-size: 35px;
-  }
-  
-  .fa-google-plus{
-     color: rgb(143, 10, 10);
-     font-size: 35px;
-  }
-  .fa-whatsapp {
-    color: limegreen;
-    font-size: 35px;
-  }
-  
+
   .map{
     flex-wrap: wrap;
     margin-top: 20px;
@@ -430,6 +442,7 @@ background-color: rgb(87, 90, 90);
     margin: 20px;
     text-align: center;
   }
+
   .Service-wrapper,
   .header, 
   .footer,
@@ -440,3 +453,9 @@ background-color: rgb(87, 90, 90);
       -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
               box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
+
+
+
+
+
+ 

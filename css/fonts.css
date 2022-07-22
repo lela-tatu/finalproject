@@ -33,3 +33,10 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url("fonts/bootstrap-icons.woff2?231ce25e89ab5804f9a6c427b8d325c9") format("woff2"),
+  url("fonts/bootstrap-icons.woff?231ce25e89ab5804f9a6c427b8d325c9") format("woff");
+    src: url("./fonts/bootstrap-icons.woff2?a74547b2f0863226942ff8ded57db345") format("woff2"),
+  url("./fonts/bootstrap-icons.woff?a74547b2f0863226942ff8ded57db345") format("woff");
+  }
