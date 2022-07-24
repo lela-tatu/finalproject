@@ -18,7 +18,6 @@
     .image,
     .image1,
     .contact,
-    .box-child,
     .box-child1,
     .menu-child1,
     .Service-child,
@@ -33,7 +32,8 @@
     }
     .map,
     .image,
-    .image1
+    .image1,
+    .box-child
     {       
         max-width: 150px;
         max-height:150px ;
