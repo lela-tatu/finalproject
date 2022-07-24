@@ -6,7 +6,6 @@
 */
 
 
-
 :root {
     
     --primary-color: #FEA116;;
@@ -18,6 +17,10 @@
     --ba-c:rgb(32, 32, 32);
     --s-child:#f7b148;
     --f-color: #3a3737;
+    --bot: #f3970c;
+    --color-s: azure;
+    --menup:#b6aeae;
+    --shadow:rgba(0,0,0,0.5);
   }
 body{
     background-color: var(--ba-c);
@@ -45,6 +48,7 @@ header{
     background-size: cover;
     border-style: groove 3px solid ;   
     border-bottom: 7mm ridge var(--gris);
+    opacity: 0.80;
 
 
 }
@@ -76,8 +80,7 @@ header{
 }
 
 li a:hover { 
-    color: var(--color-gris); 
-    border-bottom: 5px solid;
+    border-bottom: var(--s-child) 5px solid;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding: 20px;        
@@ -161,18 +164,24 @@ li a:hover {
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px var(--black);
+    -webkit-box-shadow: 0 0 10px var(--black);
+            box-shadow: 0 0 10px var(--black);
     
 }
+
 .textarea-block{
     width: 480px;
     height: 280px;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .input-box{
     width: 480px;
     height: 60px;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 .contact-wrapper:only-child{
   
@@ -181,6 +190,11 @@ li a:hover {
 
 
 /* fonts-text-style */
+.about-res{
+max-width: 600px;
+width: 100%;
+height: 100%;
+}
     
 h1{
    color: var(--primary-color);
@@ -195,18 +209,18 @@ h2{
     font-family: 'pacifico',cursive ;
     color:var(--font-color);
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     
     }
+h2::after{
+        content:'\2014'; } 
+                   
 h3{
     text-align: center;
-    color: var(--color-gris);
+    color: var(--menup);
     margin: 10px;
     font-family: 'Lobster';
    font-size: xx-large;
-}
-h2::after{
-    content:'\2014';
 }
 
 h6{
@@ -220,44 +234,42 @@ p{
     font-family: 'Lobster';
     font-weight: 500;
     text-align: center;
-    margin: 20px;
-    color: #696363; 
-       
+    margin: 10px;
+    color: #696363;       
+}
+.text{
+    color: var(--s-child);
+    margin-left: 25px;
 }
 
 .menu-p{
     font-weight: bold;
    font-size:large;
-   color: #b6aeae;
+   color: var(--menup);
    margin: 10px;
-   border-bottom: #f3970c 3px solid;
+   border-bottom:var(--bot) 3px solid;
    text-align: center;
 }
 
-
-
-
 /* section-service */
 
-.Service-wrapper{
-    
-    width: 80%;   
-    background-color: azure;
+.Service-wrapper{   
+    background-color: var(--color-s);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin-top: 25px;
-    margin-bottom: 10%;
+   
 
 }
 .Service-child{
     background-color:var(--b-color);
-    width: 900px;
+    color:var(--f-color);
+    width: 75%;
     height:auto ;
-    margin: 20px;
+    margin: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -266,7 +278,7 @@ p{
 }
 
 .Service-child:hover{
-    background-color: #f5ba62;
+    background-color:var(--s-child);
     border-radius: 10px;
     color:var(--color-gris);
     -webkit-text-decoration-style: var(--primary-color);
@@ -290,11 +302,12 @@ p{
 -webkit-box-align: center;
     -ms-flex-align: center;
         align-items: center;
+ width: 80%;       
  height: 100%;       
 margin-left: auto;   
 margin-right: auto;
 margin-top: 20px;
-margin-bottom: 30px;
+margin-bottom: 20px;
 }
 
 .wrapper-about-us {
@@ -303,27 +316,23 @@ display: -ms-flexbox;
 display: flex;
 -ms-flex-pack: distribute;
     justify-content: space-around;
-width: 80%;
-padding-top: 20px;
-margin-bottom: 30px;
 background-color:var(--gris);
 }
 
 .box-child1{
     background-color:var(--b-color);
-    width: 70%;
-    height: 400px;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    
+            align-items: center;   
     text-align: center;
 
 }
 .box-child1:hover{
     color: var(--color-gris);
-    background-color: #f7b148;
+    background-color: var(--s-child);
     border-radius: 10px; 
 }
 
@@ -343,12 +352,15 @@ background-color:var(--gris);
     margin-bottom: 20px;
     margin-left: auto;   
     margin-right: auto;
-    background-color: #3a3737;
-    align-items: center;
+    background-color: var(--f-color);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .menu-child1{
-    width: 60%; 
+    width: 80%; 
+    text-align: center;
   }
 
 /* images-style */
@@ -376,7 +388,6 @@ background-color:var(--gris);
         
 }
 
-.image3,
 .image{
     max-width: 200px;
     width: 100%;
@@ -388,21 +399,21 @@ background-color:var(--gris);
 .read2,
 .read{
   
-  color: #fdfcfc;
+  color:var(--color-gris);
   text-align: center;
-  background-color: #f3970c;
+  background-color: var(--bot);
   padding: 10px;
   border-radius: 30px;
   margin: 10px;
-  box-shadow: 0 0 10px var(--black);
+  -webkit-box-shadow: 0 0 10px var(--black);
+          box-shadow: 0 0 10px var(--black);
 }
 
 .read2,
 .read:hover{
-    border: #f1ebeb 1px solid;
+    border: var(--color-gris) 1px solid;
     background-color:var(--s-child);
-    color: #faf8f5;
-    transition-duration: 2s;
+    color: var(--color-gris);
 
 }
 .read1{
@@ -416,11 +427,12 @@ background-color:var(--gris);
   .fa-google-plus,
   .fa-whatsapp
   {
-      color: rgb(241, 158, 48);
+      color: var(--s-child);
       font-size: 35px;}
 
   .map{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 20px;
     height: 100%;
@@ -434,7 +446,7 @@ background-color:var(--gris);
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;  
-           background-color: #3a3737;
+           background-color: var(--f-color);
     margin-top: 30px;
     
     }
@@ -456,7 +468,7 @@ background-color:var(--gris);
     margin: 20px;
     text-align: center;
   }
-
+  
   .Service-wrapper,
   .header, 
   .footer,
@@ -464,8 +476,8 @@ background-color:var(--gris);
   .menu-wrapper,
   .menu-wrapper2, 
   .contact-wrapper{
-      -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
-              box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 0 0 20px var(--shadow);
+              box-shadow: 0 0 20px var(--shadow);
   }
 
 
