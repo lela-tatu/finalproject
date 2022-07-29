@@ -3,11 +3,9 @@
     .toggle-menu {
         display: block;
     }
-    .ul,
-    .logo
-    {   
+    .logo,
+    .nav-list {
         display: none;
-        
     }
     
     .Service-wrapper,
@@ -31,14 +29,21 @@
         align-items: center;       
     }
     .map,
-    .image,
-    .image1,
     .box-child
+    .image1
     {       
         max-width: 150px;
-        max-height:150px ;
+        max-height:150px;
+        height: auto;
         
     }
+    .image{
+    
+        max-width: 80px;
+        max-height:80px;
+        height: auto; 
+    }
+
     .contact-wrapper
     .textarea-block,
     .input-box{
@@ -51,12 +56,10 @@
         max-width: 300px;
 
         }
-    p,    
-    h1,    
+    p,        
     h2,    
-    h3,
     h6{
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
 }
